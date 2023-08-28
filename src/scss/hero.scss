@@ -1,0 +1,49 @@
+.Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    flex: 1;
+    
+    &__TopText {
+        color: #FFC632;
+        font-family: Kufam;
+        font-size: 13px;
+        max-width: 550px;
+    }
+    
+    &__MiddleText {
+        color: #FFFFFF;
+        font-family: Miriam Libre;
+        font-size: 75px;
+        max-width: 550px;
+    }
+    
+    &__BottomText {
+        color: #FFFFFF;
+        font-family: Kufam;
+        font-size: 16px;
+        max-width: 550px;
+    }
+    
+    &__Separator {
+        max-width: 527px;
+        background-color: #FFFFFF;
+        height: 1px;
+        margin-inline: 20px;
+        margin-block-end: 26px;
+        width: 100%;
+    }
+
+    &__DownArrow {
+        justify-self: end;
+        // flex: 0;
+        // position: absolute;
+        bottom: 20px;
+        // margin-bottom: auto;
+    }
+}
