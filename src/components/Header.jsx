@@ -5,20 +5,20 @@ function Header() {
   return (
     <header className="Header">
       <img src={ logo } className="Header__Logo" />
-      <nav className="Header__Nav">
+      <nav className="Header__DesktopNav">
         <ul>
           <li>
-            <span className="Header__NavNumber">1. </span>
+            <span className="Header__DesktopNavNumber">1. </span>
             About
           </li>
-          <div className="Header__NavSeparator" />
+          <div className="Header__DesktopNavSeparator" />
           <li>
-            <span className="Header__NavNumber">2. </span>
+            <span className="Header__DesktopNavNumber">2. </span>
             Work
           </li>
-          <div className="Header__NavSeparator" />
+          <div className="Header__DesktopNavSeparator" />
           <li>
-            <span className="Header__NavNumber">3. </span>
+            <span className="Header__DesktopNavNumber">3. </span>
             Contact
           </li>
         </ul>

@@ -1,12 +1,18 @@
+@import 'breakpoints.scss';
+
 .Header {
-    padding: 0;
     background-color: #001819;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 84px;
-    position: fixed;
+    height: 104px;
+    position: sticky;
     width: 100%;
+
+    @include tablet {
+        padding-inline: 30px;
+    }
 
     &__Logo {
         height: 100%;
@@ -18,14 +24,20 @@
         display: block;
     }
 
-    &__Nav {
+    &__DesktopNav {
+        @include mobile-large {
+            display: none;
+        }
+
         ul {
             display: flex;
             justify-content: space-between;
-            gap: 38px;
+            gap: 28px;
         }
 
         li {
+            padding-inline: 5px;
+            cursor: pointer;
             color: #FFFFFF;
             font-family: Krub;
             font-size: 16px;

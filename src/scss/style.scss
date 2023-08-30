@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kufam&family=Miriam+Libre&display=swap');
+@import 'breakpoints.scss';
 
 html, body {
     padding: 0;
@@ -6,10 +7,38 @@ html, body {
     width: 100%;
     background-color: #002324;
     letter-spacing: 0.5px;
+    scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+section {
+    padding-inline: 32px;
+    display: flex;
+    justify-content: center;
+    
+    @include mobile-large {
+        padding-inline: 20px;
+    }
+}
+
+.ContentWrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sectionHeading {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Krub;
+    font-size: 30px;
+    font-weight: 400;
+    
+    span {
+        color: #FFC632;
+    }
 }
