@@ -27,6 +27,14 @@ function AboutMe() {
                                 <li>React</li>
                                 <li>PHP</li>
                                 <li>Sass</li>
+                                <li>Magento 2</li>
+                                <li>MySQL</li>
+                                <li>Linux</li>
+                                <li>Ajax</li>
+                                <li>Tailwindcss</li>
+                                <li>Jquery</li>
+                                <li>TypeScript</li>
+                                <li>Alpinejs</li>
                             </ul>
                         </div>
                     </div>

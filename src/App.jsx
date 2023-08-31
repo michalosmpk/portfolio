@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
+import MyWork from './components/MyWork';
 import './scss/style.scss';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <AboutMe />
+      <MyWork />
     </>
   )
 }

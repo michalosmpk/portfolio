@@ -1,0 +1,66 @@
+@import 'breakpoints.scss';
+
+.Work {
+    padding-block-end: 80px;
+
+    &__Grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        
+        @include tablet-large {
+            grid-template-columns: 1fr;
+            gap: 55px;
+        }
+        
+        @include mobile {
+            gap: 30px;
+        }
+    }
+
+    &__Tile {
+        $tile: &;
+        width: 100%;
+        max-width: 385px;
+        height: 220px;
+        position: relative;
+        border-radius: 16px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        justify-self: center;
+        cursor: pointer;
+
+        @include mobile {
+            height: 180px;
+        }
+
+        &:hover {
+            #{$tile}Text {
+                height: 100%
+            }
+        }
+
+        &Text {
+            position: absolute;
+            bottom: 0;
+            height: 46px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #FFFFFF;
+            font-family: Krub;
+            font-size: 16px;
+            font-weight: 400;
+            backdrop-filter: blur(4px);
+            transition-property: height;
+            transition-duration: 250ms;
+            // transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.375);
+        }
+    }
+}
