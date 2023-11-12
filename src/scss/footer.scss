@@ -1,0 +1,20 @@
+@import './breakpoints.scss';
+
+.Footer {
+    margin-block-end: 35px;
+    
+    &__Wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__Copy {
+        color: #FFF;
+        text-align: center;
+        font-family: Krub;
+        font-size: 18px;
+        opacity: 0.25;
+        letter-spacing: 0.05em;
+        max-width: 678px;
+    }
+}

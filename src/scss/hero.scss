@@ -1,12 +1,16 @@
 @import 'breakpoints.scss';
 
 .Hero {    
-    min-height: calc(100vh - 104px);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-block: 40px;
+    z-index: 100;
+
+    @include desktop-max {
+        min-height: calc(100vh);
+    }
 
     &__TopText {
         color: #FFC632;

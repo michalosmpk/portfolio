@@ -3,10 +3,10 @@ import downArrow from '../assets/downArrow.svg';
 
 function Hero() {
     return (
-        <section className="Hero">
+        <section className="Hero" id="Hero">
             <div className="Hero__ContentWrapper">
-                <p className="Hero__TopText">Cześć, nazywam się</p>
-                <p className="Hero__MiddleText">Michał Kaszak.</p>
+                <p className="Hero__TopText">Hello, I'm</p>
+                <p className="Hero__MiddleText">Michał Kaszak</p>
                 <div className="Hero__Separator" />
                 <p className="Hero__BottomText">
                     Jestem programistą który zajmuje się robieniem stron internetowych czymśtam no i czymśtam jeszcze. Chętnie podejmę z tobą współpracę. Zajrzyj do mojego portfolio i cośtam cośtam.
