@@ -1,5 +1,18 @@
-# React + Vite
+# 1. Project setup:
 
-## To run the project run
+```sh
+cd portfolio
+npm i
+```
 
-**npm run dev**
+# 2. Run dev environment: #
+
+```sh
+npm run dev
+```
+
+
+**Project tech stack:**
+
+- **React + Vite**
+- **Scss**
