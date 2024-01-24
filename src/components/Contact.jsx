@@ -13,9 +13,7 @@ function Contact() {
                 </p>
                 <div className="Contact__SeparatorLine"/>
                 <p className="Contact__SmallText">
-                    Błagam desperacko szukam klienów bo jestem biednym mlodym człowiekiem. Daj lajka suba i pamiętaj żeby przygrzmocić w dzwoneczek :--D
-                    Tym akcentem zegnam się z wami, hej siemanko! *żółwik do kamery*
-                    Tutaj masz mój kontakt. Masz propozycję, pisz:
+                    If you have any questions, please contact me at:
                 </p>
                 <p className="Contact__Email">
                     Michalosmpk@gmail.com
