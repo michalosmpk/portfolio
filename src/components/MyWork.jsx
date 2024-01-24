@@ -1,5 +1,12 @@
 import '../scss/myWork.scss';
 import code from '../assets/programistyczne_kody.png';
+import stenders from '../assets/work/stenders.png';
+import moonclimbing from '../assets/work/moonclimbing.png';
+import rareseeds from '../assets/work/rareseeds.png';
+import taxi from '../assets/work/taxi.png';
+import pastelove from '../assets/work/pastelove.png';
+import diamond from '../assets/work/diamond.png';
+import invicta from '../assets/work/invicta.png';
 
 function MyWork() {
     return (
@@ -12,7 +19,7 @@ function MyWork() {
 
                 <div className="Work__Content">
                     <div className="Work__Grid">
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/stenders.png\')' }} href="https://www.stenders-cosmetics.com" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${stenders}')` }} href="https://www.stenders-cosmetics.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Stenders Cosmetics
@@ -22,7 +29,7 @@ function MyWork() {
                             </p>
                         </a>
                         
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/moonclimbing.png\')' }} href="https://moonclimbing.com" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${moonclimbing}')` }} href="https://moonclimbing.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Moonclimbing
@@ -32,7 +39,7 @@ function MyWork() {
                             </p>
                         </a>
 
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/rareseeds.png\')' }} href="https://www.rareseeds.com" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${rareseeds}')` }} href="https://www.rareseeds.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Rareseeds
@@ -42,7 +49,7 @@ function MyWork() {
                             </p>
                         </a>
 
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/taxi.png\')' }} href="https://taxi29krasnystaw.pl" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${taxi}')` }} href="https://taxi29krasnystaw.pl" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Taxi 29 Krasnystaw
@@ -52,7 +59,7 @@ function MyWork() {
                             </p>
                         </a>
 
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/pastelove.png\')' }} href="https://pastelove.pl/" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${pastelove}')` }} href="https://pastelove.pl/" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Pastelove
@@ -62,7 +69,7 @@ function MyWork() {
                             </p>
                         </a>
 
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/diamond.png\')' }} href="https://www.diamondmansion.com/" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${diamond}')` }} href="https://www.diamondmansion.com/" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Diamond Mansion
@@ -72,7 +79,7 @@ function MyWork() {
                             </p>
                         </a>
 
-                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/invicta.png\')' }} href="https://invictastores.com/" target="_blank" rel="noreferrer">
+                        <a className="Work__Tile" style={{ backgroundImage: `url('${invicta}')` }} href="https://invictastores.com/" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
                                 Invicta
