@@ -79,11 +79,39 @@
             grid-template-columns: 1fr 1fr;
             row-gap: 24px;
 
+            @include tablet-large {
+                margin-inline: auto;
+                width: auto;
+                max-width: max-content;
+                column-gap: 20vw;
+            }
+
+            @include mobile {
+                column-gap: 15px;
+            }
+
+            @include small-mobile {
+                grid-template-columns: 1fr;
+            }
             li {
                 color: #FFFFFF;
                 font-family: Kufam;
                 font-size: 16px;
                 font-weight: 400;
+
+                @include tablet-large {
+                    max-width: max-content;
+                }
+
+                div {
+                    height: 8px;
+                    width: 8px;
+                    background-color: #FFC632;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transform: translateY(-2px);
+                    margin-inline-end: 8px;
+                }
             }
         }
     }

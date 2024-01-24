@@ -12,45 +12,75 @@ function MyWork() {
 
                 <div className="Work__Content">
                     <div className="Work__Grid">
-                        <div className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/work_placeholder.jpeg\')' }}>
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/stenders.png\')' }} href="https://www.stenders-cosmetics.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
-                                Delfiny w wodzie
+                                Stenders Cosmetics
                                 <p className="Work__TileTextAdditional">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur itaque nobis ipsa non totam quae laborum mollitia.
+                                    Worked on the frontend (React, Sass), SEO optimizations, bot rendering issues and GTM implementations.
                                 </p>
                             </p>
-                        </div>
+                        </a>
                         
-                        <div className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/work_placeholder.jpeg\')' }}>
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/moonclimbing.png\')' }} href="https://moonclimbing.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
-                                Delfiny w wodzie
+                                Moonclimbing
                                 <p className="Work__TileTextAdditional">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur itaque nobis ipsa non totam quae laborum mollitia.
+                                    Worked on the frontend (AlpineJS, Tailwindcss) and backend (Magento 2) of the application.
                                 </p>
                             </p>
-                        </div>
+                        </a>
 
-                        <div className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/work_placeholder.jpeg\')' }}>
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/rareseeds.png\')' }} href="https://www.rareseeds.com" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
-                                Delfiny w wodzie
+                                Rareseeds
                                 <p className="Work__TileTextAdditional">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur itaque nobis ipsa non totam quae laborum mollitia.
+                                    Worked on the frontend (React, Sass) of the app.
                                 </p>
                             </p>
-                        </div>
+                        </a>
 
-                        <div className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/work_placeholder.jpeg\')' }}>
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/taxi.png\')' }} href="https://taxi29krasnystaw.pl" target="_blank" rel="noreferrer">
                             <div className="Work__TileBlur" />
                             <p className="Work__TileText">
-                                Delfiny w wodzie
+                                Taxi 29 Krasnystaw
                                 <p className="Work__TileTextAdditional">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur itaque nobis ipsa non totam quae laborum mollitia.
+                                    This is one of my older projects. It&apos;s surely not the most beautiful website I&apos;ve made however I&apos;ve learned a lot while developing it a few years back.
                                 </p>
                             </p>
-                        </div>
+                        </a>
+
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/pastelove.png\')' }} href="https://pastelove.pl/" target="_blank" rel="noreferrer">
+                            <div className="Work__TileBlur" />
+                            <p className="Work__TileText">
+                                Pastelove
+                                <p className="Work__TileTextAdditional">
+                                    Developed the whole frontend for the website. (Wordpress, Woocommerce)
+                                </p>
+                            </p>
+                        </a>
+
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/diamond.png\')' }} href="https://www.diamondmansion.com/" target="_blank" rel="noreferrer">
+                            <div className="Work__TileBlur" />
+                            <p className="Work__TileText">
+                                Diamond Mansion
+                                <p className="Work__TileTextAdditional">
+                                    Seo fixes, SEO optimizations, GTM implementation. (Magento 2, PWA Studio)
+                                </p>
+                            </p>
+                        </a>
+
+                        <a className="Work__Tile" style={{ backgroundImage: 'url(\'src/assets/work/invicta.png\')' }} href="https://invictastores.com/" target="_blank" rel="noreferrer">
+                            <div className="Work__TileBlur" />
+                            <p className="Work__TileText">
+                                Invicta
+                                <p className="Work__TileTextAdditional">
+                                    Seo fixes, SEO optimizations, GTM implementation, GA4 measurement protocol implementation. (Magento 2, ScandiPWA)
+                                </p>
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>

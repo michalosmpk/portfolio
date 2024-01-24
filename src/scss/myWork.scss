@@ -10,7 +10,7 @@
 
     @include desktop-large {
         margin-block-end: 400px;
-    }    
+    }
 
     @include tablet-large {
         margin-block-end: 200px;
@@ -55,9 +55,8 @@
         height: 220px;
         position: relative;
         border-radius: 16px;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
         overflow: hidden;
         justify-self: center;
         cursor: pointer;
@@ -84,7 +83,8 @@
             flex-direction: column;
             text-align: center;
             padding-block-start: 12px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
             color: #FFFFFF;
             font-family: Krub;
             font-size: 16px;
