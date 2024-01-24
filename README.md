@@ -11,6 +11,12 @@ npm i
 npm run dev
 ```
 
+# 3. Build for production: #
+
+```sh
+npm run build
+```
+
 
 **Project tech stack:**
 
