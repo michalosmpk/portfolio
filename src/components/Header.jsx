@@ -1,10 +1,24 @@
+import { useState } from 'react';
 import '../scss/header.scss';
 import logo from '../assets/logo.svg';
 
 function Header() {
-  return (
+	const [isHamburgerActive, setHamburgerActive] = useState(false);
+
+	const handleHamburger = () => {
+		setHamburgerActive(!isHamburgerActive);
+	}
+
+	return (
     <header className="Header">
 		<img src={ logo } className="Header__Logo" />
+		<nav className="Header__MobileNav">
+			<button className={`hamburger hamburger--collapse ${isHamburgerActive ? 'is-active' : ''}`} type="button" onClick={handleHamburger}>
+				<span className="hamburger-box">
+					<span className="hamburger-inner"></span>
+				</span>
+			</button>
+		</nav>
 		<nav className="Header__DesktopNav">
 			<ul>
 				<a href="#AboutMe">

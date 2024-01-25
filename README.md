@@ -11,7 +11,7 @@ npm i
 npm run dev
 ```
 
-# 3. Build for production: #
+# 3. Build production (portfolio/dist/): #
 
 ```sh
 npm run build
