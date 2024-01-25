@@ -13,8 +13,13 @@
 	padding-inline: 30px;
 	
     @include desktop {
-		padding-inline: 84px;
+        padding-inline: 84px;
 	}
+    
+    @include mobile-large {
+        padding-inline: 15px;
+        height: 65px;
+    }
 
     &__Logo {
         height: 100%;
@@ -64,6 +69,7 @@
     &__MobileNav {
         .hamburger{
             display: none;
+            scale: 0.75;
             
             @include mobile-large {
                 display:  block;
