@@ -1,57 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kufam&family=Miriam+Libre&display=swap');
-@import 'breakpoints.scss';
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kufam&family=Miriam+Libre&display=swap");
+@import "breakpoints.scss";
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: #002324;
-    letter-spacing: 0.75px;
-    scroll-behavior: smooth;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #002324;
+  letter-spacing: 0.75px;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 0.05em;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.05em;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    padding-inline: 30px;
-    
-    @include desktop {
-        padding-inline: 60px;
-    }
+  display: flex;
+  justify-content: center;
+  padding-inline: 30px;
 
-    @include mobile-large {
-        padding-inline: 20px;
-    }
+  @include desktop {
+    padding-inline: 60px;
+  }
+
+  @include mobile-large {
+    padding-inline: 20px;
+  }
 }
 
 .ContentWrapper {
-    max-width: 1200px;
-    width: 100%;
-    position: relative;
-    z-index: 20;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 20;
 }
 
 .sectionHeading {
-    color: #FFFFFF;
-    text-align: center;
-    font-family: Krub;
-    font-size: 30px;
-    font-weight: 400;
-    padding-block-start: 104px;
-    
-    span {
-        color: #FFC632;
-    }
+  color: #ffffff;
+  text-align: center;
+  font-family: Krub;
+  font-size: 30px;
+  font-weight: 400;
+  padding-block-start: 104px;
+
+  span {
+    color: #ffc632;
+  }
 }

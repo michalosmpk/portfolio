@@ -1,89 +1,89 @@
-@import 'breakpoints.scss';
+@import "breakpoints.scss";
 
-.Hero {    
+.Hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-block: 40px;
+  z-index: 100;
+
+  @include desktop-max {
+    min-height: calc(100vh);
+  }
+
+  &__TopText {
+    color: #ffc632;
+    font-family: Kufam;
+    font-size: 18px;
+    max-width: 550px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__MiddleText {
+    color: #ffffff;
+    font-family: Miriam Libre;
+    font-size: 75px;
+    max-width: 700px;
+
+    @include tablet {
+      font-size: 62px;
+      margin-block-end: 5px;
+    }
+
+    @include mobile {
+      margin-block-end: 10px;
+      font-size: 45px;
+    }
+  }
+
+  &__BottomText {
+    color: #ffffff;
+    font-family: Kufam;
+    font-size: 20px;
+    max-width: 550px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__Separator {
+    max-width: 527px;
+    background-color: #ffffff;
+    height: 1px;
+    margin-inline: 20px;
+    margin-block-end: 26px;
+    width: 100%;
+  }
+
+  &__DownArrow {
+    justify-self: end;
+    // flex: 0;
+    // position: absolute;
+    bottom: 20px;
+    // margin-bottom: auto;
+  }
+
+  &__ContentWrapper {
+    flex: 1;
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-block: 40px;
-    z-index: 100;
+    text-align: center;
+  }
 
-    @include desktop-max {
-        min-height: calc(100vh);
-    }
-
-    &__TopText {
-        color: #FFC632;
-        font-family: Kufam;
-        font-size: 18px;
-        max-width: 550px;
-
-        @include mobile {
-            font-size: 16px;
-        }
-    }
-    
-    &__MiddleText {
-        color: #FFFFFF;
-        font-family: Miriam Libre;
-        font-size: 75px;
-        max-width: 700px;
-
-        @include tablet {
-            font-size: 62px;
-            margin-block-end: 5px;
-        }
-
-        @include mobile {
-            margin-block-end: 10px;
-            font-size: 45px;
-        }
-    }
-    
-    &__BottomText {
-        color: #FFFFFF;
-        font-family: Kufam;
-        font-size: 20px;
-        max-width: 550px;
-
-        @include mobile {
-            font-size: 16px;
-        }
-    }
-    
-    &__Separator {
-        max-width: 527px;
-        background-color: #FFFFFF;
-        height: 1px;
-        margin-inline: 20px;
-        margin-block-end: 26px;
-        width: 100%;
-    }
-
-    &__DownArrow {
-        justify-self: end;
-        // flex: 0;
-        // position: absolute;
-        bottom: 20px;
-        // margin-bottom: auto;
-    }
-
-    &__ContentWrapper {
-        flex: 1;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    &__ArrowWrapper {
-        height: auto;
-        padding-block-start: 20px;
-        padding-block-end: 40px;
-        display: flex;
-        justify-content: center;
-    }
+  &__ArrowWrapper {
+    height: auto;
+    padding-block-start: 20px;
+    padding-block-end: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }

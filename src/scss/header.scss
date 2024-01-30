@@ -1,99 +1,162 @@
-@import 'breakpoints.scss';
+@import "breakpoints.scss";
 
 .Header {
-    background-color: #001819;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 104px;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-	padding-inline: 30px;
-	
-    @include desktop {
-        padding-inline: 84px;
-	}
-    
+  background-color: #001819;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding-inline: 30px;
+
+  @include desktop {
+    padding-inline: 84px;
+  }
+
+  @include mobile-large {
+    padding-inline: 15px;
+    height: 65px;
+  }
+
+  &__Logo {
+    height: 100%;
+    padding-block: 17px;
+    flex-shrink: 0;
+    min-height: 70px;
+    max-width: 70px;
+    width: 70px;
+    display: block;
+  }
+
+  &__DesktopNav {
+    display: block;
+
     @include mobile-large {
-        padding-inline: 15px;
-        height: 65px;
+      display: none;
     }
 
-    &__Logo {
-        height: 100%;
-        padding-block: 17px;
-        flex-shrink: 0;
-        min-height: 70px;
-        max-width: 70px;
-        width: 70px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    li {
+      padding-inline: 5px;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Krub;
+      font-size: 16px;
+      line-height: 26px;
+      list-style-type: none;
+    }
+
+    &Number {
+      color: #ffc632;
+    }
+
+    &Separator {
+      height: 27px;
+      width: 1px;
+      opacity: 0.4;
+      background-color: #ffffff;
+    }
+  }
+
+  &__Mobile {
+    position: absolute;
+    z-index: -1;
+    background-color: #001819;
+    left: 0;
+    top: calc(min(-1000px, -100vh));
+    // height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    transition: top 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    &-isActive {
+      top: 0;
+    }
+
+    &Nav {
+      margin-block-start: 100px;
+      padding-inline: 30px;
+      ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 28px;
+        max-width: 350px;
+        margin-inline: auto;
+      }
+
+      a {
+        width: 100%;
+      }
+
+      li {
+        padding-inline: 5px;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Krub;
+        font-size: 16px;
+        line-height: 26px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &Text {
         display: block;
+      }
+
+      &Number {
+        color: #ffc632;
+        display: block;
+      }
+
+      &Separator {
+        height: 1px;
+        width: 100%;
+        // max-width: 300px;
+        opacity: 0.4;
+        background-color: #ffffff;
+      }
     }
 
-    &__DesktopNav {
-		display: block;
+    &Button {
+      .hamburger {
+        display: none;
+        scale: 0.75;
 
         @include mobile-large {
-            display: none;
+          display: block;
         }
 
-        ul {
-            display: flex;
-            justify-content: space-between;
-            gap: 28px;
+        &:hover {
+          opacity: 1;
         }
 
-        li {
-            padding-inline: 5px;
-            cursor: pointer;
-            color: #FFFFFF;
-            font-family: Krub;
-            font-size: 16px;
-            line-height: 26px;
-            list-style-type: none;
-        }
-        
-        &Number {
-            color: #FFC632;
+        &.is-active:hover {
+          opacity: 1;
         }
 
-        &Separator {
-            height: 27px;
-            width: 1px;
-            opacity: 0.4;
-            background-color: #FFFFFF;
+        &-inner {
+          background-color: #fff !important;
+
+          &::after {
+            background-color: inherit !important;
+          }
+
+          &::before {
+            background-color: inherit !important;
+          }
         }
+      }
     }
-
-    &__MobileNav {
-        .hamburger{
-            display: none;
-            scale: 0.75;
-            
-            @include mobile-large {
-                display:  block;
-            }
-        
-			&:hover {
-				opacity: 1;
-			}
-
-			&.is-active:hover {
-				opacity: 1;
-			}
-
-			&-inner {
-				background-color: #FFF !important;
-
-				&::after {
-					background-color: inherit !important;
-				}
-
-				&::before {
-					background-color: inherit !important;
-				}
-			}
-        }
-    }
+  }
 }

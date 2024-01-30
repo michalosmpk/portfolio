@@ -8,49 +8,49 @@ $desktopLarge: 1300px;
 $desktopMax: 1920px;
 
 @mixin small-mobile {
-    @media (max-width: $smallMobile) {
-        @content;
-    }
+  @media (max-width: $smallMobile) {
+    @content;
+  }
 }
 
 @mixin mobile {
-    @media (max-width: $mobile) {
-        @content;
-    }
+  @media (max-width: $mobile) {
+    @content;
+  }
 }
 
 @mixin mobile-large {
-    @media (max-width: $mobileLarge) {
-        @content;
-    }
+  @media (max-width: $mobileLarge) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (max-width: $tablet) {
-        @content;
-    }
+  @media (max-width: $tablet) {
+    @content;
+  }
 }
 
 @mixin tablet-large {
-    @media (max-width: $tabletLarge) {
-        @content;
-    }
+  @media (max-width: $tabletLarge) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: $desktop) {
-        @content;
-    }
+  @media (min-width: $desktop) {
+    @content;
+  }
 }
 
 @mixin desktop-large {
-    @media (min-width: $desktopLarge) {
-        @content;
-    }
+  @media (min-width: $desktopLarge) {
+    @content;
+  }
 }
 
 @mixin desktop-max {
-    @media (max-width: $desktopMax) {
-        @content;
-    }
+  @media (max-width: $desktopMax) {
+    @content;
+  }
 }

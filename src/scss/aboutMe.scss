@@ -1,118 +1,118 @@
-@import 'breakpoints.scss';
+@import "breakpoints.scss";
 
 .About {
-    padding-block-start: 40px;
-    padding-block-end: 40px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+
+  @include desktop {
+    margin-block-end: 250px;
+  }
+
+  @include desktop-large {
+    margin-block-end: 300px;
+  }
+
+  @include tablet-large {
+    margin-block-end: 200px;
+  }
+
+  @include tablet {
+    margin-block-end: 150px;
+  }
+
+  @include mobile-large {
+    margin-block-end: 100px;
+  }
+
+  &__Content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1.1fr;
 
     @include desktop {
-        margin-block-end: 250px;
+      gap: 40px;
     }
-
-    @include desktop-large {
-        margin-block-end: 300px;
-    }    
 
     @include tablet-large {
-        margin-block-end: 200px;
+      grid-template-columns: none;
+      text-align: center;
     }
+  }
+
+  &__Heading {
+    margin-block-end: 70px;
+  }
+
+  &__LeftCol {
+    display: grid;
+    gap: 25px;
 
     @include tablet {
-        margin-block-end: 150px;
+      gap: 25px;
     }
+  }
 
-    @include mobile-large {
-        margin-block-end: 100px;
-    }
-    
-    &__Content {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: 1fr 1.1fr;
-        
-        @include desktop {
-            gap: 40px;
-        }
+  &__RightCol {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002324;
+  }
 
-        @include tablet-large {
-            grid-template-columns: none;
-            text-align: center;
-        }
-    }
+  &__MainText {
+    color: #ffffff;
+    font-family: Kufam;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
-    &__Heading {
-        margin-block-end: 70px;
-    }
+  &__Image {
+    mix-blend-mode: lighten;
+    width: 100%;
+  }
 
-    &__LeftCol {
-        display: grid;
-        gap: 25px;
+  &__Technologies {
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 24px;
 
-        @include tablet {
-            gap: 25px;
-        }
-    }
-    
-    &__RightCol {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #002324;
-    }
-    
-    &__MainText {
-        color: #FFFFFF;
+      @include tablet-large {
+        margin-inline: auto;
+        width: auto;
+        max-width: max-content;
+        column-gap: 20vw;
+      }
+
+      @include mobile {
+        column-gap: 15px;
+      }
+
+      @include small-mobile {
+        grid-template-columns: 1fr;
+      }
+      li {
+        color: #ffffff;
         font-family: Kufam;
         font-size: 16px;
-        line-height: 30px;
-    }
+        font-weight: 400;
 
-    &__Image {
-        mix-blend-mode: lighten;
-        width: 100%;
-    }
-
-    &__Technologies {
-        ul {
-            list-style-type: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            row-gap: 24px;
-
-            @include tablet-large {
-                margin-inline: auto;
-                width: auto;
-                max-width: max-content;
-                column-gap: 20vw;
-            }
-
-            @include mobile {
-                column-gap: 15px;
-            }
-
-            @include small-mobile {
-                grid-template-columns: 1fr;
-            }
-            li {
-                color: #FFFFFF;
-                font-family: Kufam;
-                font-size: 16px;
-                font-weight: 400;
-
-                @include tablet-large {
-                    max-width: max-content;
-                }
-
-                div {
-                    height: 8px;
-                    width: 8px;
-                    background-color: #FFC632;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transform: translateY(-2px);
-                    margin-inline-end: 8px;
-                }
-            }
+        @include tablet-large {
+          max-width: max-content;
         }
+
+        div {
+          height: 8px;
+          width: 8px;
+          background-color: #ffc632;
+          border-radius: 50%;
+          display: inline-block;
+          transform: translateY(-2px);
+          margin-inline-end: 8px;
+        }
+      }
     }
+  }
 }
