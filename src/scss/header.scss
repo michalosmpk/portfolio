@@ -67,8 +67,9 @@
   }
 
   &__Mobile {
-    position: absolute;
+    position: fixed;
     background-color: #001819;
+    z-index: 50;
     left: 0;
     top: calc(min(-1000px, -100vh));
     min-height: 100vh;
