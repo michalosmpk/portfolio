@@ -87,7 +87,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 28px;
+        gap: 5px;
         max-width: 350px;
         margin-inline: auto;
       }
@@ -97,6 +97,7 @@
       }
 
       li {
+        padding-block: 20px;
         padding-inline: 5px;
         cursor: pointer;
         color: #ffffff;
