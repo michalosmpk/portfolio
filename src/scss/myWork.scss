@@ -98,26 +98,6 @@
       }
 
       &Text {
-        position: absolute;
-        bottom: 0;
-        height: 46px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-block-start: 12px;
-        background-color: rgba(0, 0, 0, 0.7);
-        text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
-        color: #ffffff;
-        font-family: Krub;
-        font-size: 16px;
-        font-weight: 400;
-        backdrop-filter: blur(4px);
-        transition-property: all;
-        transition-duration: 250ms;
-        padding-inline: 25px;
-        letter-spacing: 0.05em;
-
         @include small-mobile {
           padding-inline: 12px;
         }
@@ -125,15 +105,6 @@
         &-swiped {
           height: 100%;
           padding-block-start: 20px;
-        }
-
-        &Additional {
-          text-align: left;
-          padding-block-start: 10px;
-          font-size: 15px;
-          opacity: 0.95;
-          line-height: 1.5em;
-          letter-spacing: 0.05em;
         }
 
         a {

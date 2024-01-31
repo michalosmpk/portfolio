@@ -71,7 +71,7 @@ function MyWork() {
                 style={{ backgroundImage: `url('${tile.image}')` }}
               >
                 <div
-                  className="Work__TileMobileText"
+                  className="Work__TileText Work__TileMobileText"
                   ref={(el) => el && tileRefs.current.push(el)}
                   onTouchStart={(e) => handleTouchStart(e, index)}
                   onTouchMove={(e) => handleTouchMove(e, index)}
@@ -88,9 +88,7 @@ function MyWork() {
                       className="Work__TileMobileSwipeHint"
                     />
                   )}
-                  <p className="Work__TileMobileTextAdditional">
-                    {tile.content}
-                  </p>
+                  <p className="Work__TileTextAdditional">{tile.content}</p>
                   <a href={tile.link}>Proceed to website</a>
                 </div>
               </div>
