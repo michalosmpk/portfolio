@@ -1,43 +1,43 @@
 [
   {
     "link": "https://www.stenders-cosmetics.com",
-    "image": "src/assets/work/stenders.png",
+    "image": "/work/stenders.png",
     "title": "Stenders Cosmetics",
     "content": "Worked on the frontend (React, Sass), SEO optimizations, crawler issues and GTM."
   },
   {
     "link": "https://moonclimbing.com",
-    "image": "src/assets/work/moonclimbing.png",
+    "image": "/work/moonclimbing.png",
     "title": "Moonclimbing",
     "content": "Worked on the frontend (AlpineJS, Tailwindcss) and backend (Magento 2) of the application."
   },
   {
     "link": "https://www.rareseeds.com",
-    "image": "src/assets/work/rareseeds.png",
+    "image": "/work/rareseeds.png",
     "title": "Rareseeds",
     "content": "Worked on the frontend (React, Sass) of the app."
   },
   {
     "link": "https://taxi29krasnystaw.pl",
-    "image": "src/assets/work/taxi.png",
+    "image": "/work/taxi.png",
     "title": "Taxi 29 Krasnystaw",
     "content": "The website isn't breathtaking however I've learned a lot while developing it a few years back."
   },
   {
     "link": "https://pastelove.pl/",
-    "image": "src/assets/work/pastelove.png",
+    "image": "/work/pastelove.png",
     "title": "Pastelove",
     "content": "Developed the whole frontend for the website. (Wordpress, Woocommerce)"
   },
   {
     "link": "https://www.diamondmansion.com/",
-    "image": "src/assets/work/diamond.png",
+    "image": "/work/diamond.png",
     "title": "Diamond Mansion",
     "content": "Seo fixes, SEO optimizations, GTM implementation. (Magento 2, PWA Studio)"
   },
   {
     "link": "https://invictastores.com/",
-    "image": "src/assets/work/invicta.png",
+    "image": "/work/invicta.png",
     "title": "Invicta",
     "content": "Seo fixes, SEO optimizations, GTM, GA4 MP implementation. (Magento 2, ScandiPWA)"
   }
