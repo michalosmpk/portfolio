@@ -86,37 +86,6 @@
       }
     }
 
-    &Mobile {
-      transition: transform 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955); // Add a smooth transition for swipe effect
-
-      &SwipeHint {
-        width: 50px;
-        position: absolute;
-        top: -4px;
-        right: 5px;
-        pointer-events: none;
-      }
-
-      &Text {
-        @include small-mobile {
-          padding-inline: 12px;
-        }
-
-        &-swiped {
-          height: 100%;
-          padding-block-start: 20px;
-        }
-
-        a {
-          margin-block-start: 5px;
-          padding-block: 5px;
-          color: #fff;
-          text-decoration: none;
-          display: block;
-        }
-      }
-    }
-
     &Text {
       position: absolute;
       bottom: 0;
@@ -146,6 +115,36 @@
         opacity: 0.95;
         line-height: 1.5em;
         letter-spacing: 0.05em;
+      }
+    }
+    &Mobile {
+      transition: transform 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955); // Add a smooth transition for swipe effect
+
+      &SwipeHint {
+        width: 50px;
+        position: absolute;
+        top: -4px;
+        right: 5px;
+        pointer-events: none;
+      }
+
+      &Text {
+        @include small-mobile {
+          padding-inline: 12px;
+        }
+
+        &-swiped {
+          height: 100%;
+          padding-block-start: 20px;
+        }
+
+        a {
+          margin-block-start: 5px;
+          padding-block: 5px;
+          color: #fff;
+          text-decoration: none;
+          display: block;
+        }
       }
     }
   }
