@@ -66,7 +66,7 @@ function MyWork() {
           <div className="Work__Grid Work__GridMobile">
             {data.map((tile, index) => (
               <div
-                key={tile.id}
+                key={index}
                 className="Work__Tile"
                 style={{ backgroundImage: `url('${tile.image}')` }}
               >

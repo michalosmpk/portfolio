@@ -1,5 +1,6 @@
 import "../scss/aboutMe.scss";
 import AboutMeImg from "../assets/AboutMe.png";
+import data from "../data/technologies.json";
 
 function AboutMe() {
   return (
@@ -32,70 +33,12 @@ function AboutMe() {
             </p>
             <div className="About__Technologies">
               <ul>
-                <li>
-                  <div />
-                  JavaScript
-                </li>
-                <li>
-                  <div />
-                  React
-                </li>
-                <li>
-                  <div />
-                  PHP
-                </li>
-                <li>
-                  <div />
-                  Sass
-                </li>
-                <li>
-                  <div />
-                  Magento 2
-                </li>
-                <li>
-                  <div />
-                  SQL
-                </li>
-                <li>
-                  <div />
-                  Linux
-                </li>
-                <li>
-                  <div />
-                  Ajax
-                </li>
-                <li>
-                  <div />
-                  Tailwindcss
-                </li>
-                <li>
-                  <div />
-                  Jquery
-                </li>
-                <li>
-                  <div />
-                  TypeScript
-                </li>
-                <li>
-                  <div />
-                  Alpinejs
-                </li>
-                <li>
-                  <div />
-                  ChakraUI
-                </li>
-                <li>
-                  <div />
-                  Wordpress
-                </li>
-                <li>
-                  <div />
-                  PWA Studio
-                </li>
-                <li>
-                  <div />
-                  Python
-                </li>
+                {data.map((element, index) => (
+                  <li key={index}>
+                    <div />
+                    {element.name}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
